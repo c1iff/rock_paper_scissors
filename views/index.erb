@@ -1,0 +1,43 @@
+<div class="jumbotron">
+  <h1>Rock Paper Scissors</h1>
+</div>
+<div class="jumbotron">
+<form action="/game">
+  <div class="form-group">
+    <h3>Play against someone</h3>
+    <label for="player1">Select Player 1 Move:</label>
+    <select class="form-control" name="player1">
+      <option value="rock">rock</option>
+      <option value="paper">paper</option>
+      <option value="scissors">scissors</option>
+    </select>
+  </div>
+  <div class="form-group">
+     <label for="player2">Select Player 2 Move:</label>
+     <select class="form-control" name="player2">
+       <option value="rock">rock</option>
+       <option value="paper">paper</option>
+       <option value="scissors">scissors</option>
+     </select>
+  </div>
+  <button type="submit" class="btn-success">Send</button>
+</form>
+
+<form action="/player_vs_computer">
+  <div class="form-group">
+    <h3>Play against AI</h3>
+    <label for="human">Select Player 1 Move:</label>
+    <select class="form-control" name="human">
+      <option value="rock">rock</option>
+      <option value="paper">paper</option>
+      <option value="scissors">scissors</option>
+    </select>
+  </div>
+  <button type="submit" class="btn-success">Go</button>
+</form>
+</div>
+
+<div class="jumbotron">
+  <h2><%= @result %></h2>
+  <h2><%= @result2 %></h2>
+</div>
